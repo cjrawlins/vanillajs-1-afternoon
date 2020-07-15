@@ -9,10 +9,31 @@
 <body>
   <header><h1>Poker Cards</h1></header>
     <main>
-        <section><span>A</span><span>♦</span><span>A</span></section>
-        <section><span>A</span><span>♣</span><span>A</span></section>
-        <section><span>A</span><span>♥</span><span>A</span></section>
-        <section><span>A</span><span>♠</span><span>A</span></section>
+        <div id="controls">
+          <select name="suit" id="input-card-id" onchange="autoSetColor()">
+            <option value="select-suit">Select Suit</option>
+            <option value="diamonds">Diamonds</option>
+            <option value="clubs">Clubs</option>
+            <option value="hearts">Hearts</option>
+            <option value="spades">Spades</option>
+          </select>
+          <select name="color" id="input-card-color">
+            <option value="select-color">Select Color</option>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+          </select>
+          <button id='input-button' onclick="setCard()">Set</button>
+          <button id='input-button' onclick="resetSelect()">Reset</button>
+          <div>
+            <input type="checkbox" name="autoColor" id="autoColorSelect">
+            <label for="autoColorSelect">Auto Color</label>
+          </div>
+        </div>
+        <section class="cards" id='diamonds'><span>A</span><span>♦</span><span>A</span></section>
+        <section class="cards" id='clubs'><span>A</span><span>♣</span><span>A</span></section>
+        <section class="cards" id='hearts'><span>A</span><span>♥</span><span>A</span></section>
+        <section class="cards" id='spades'><span>A</span><span>♠</span><span>A</span></section>
     </main>
+    <script src="./index.js"></script>
 </body>
 </html>

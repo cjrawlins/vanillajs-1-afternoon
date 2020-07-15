@@ -53,3 +53,22 @@ section span:nth-of-type(3) {
   width: 100px;
   border: 1px solid #000;
 }
+
+#controls {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  color: grey;
+  padding: 1vh 1vw;
+  font-size: 30px;
+  margin: 15px;
+}
+
+label  {
+  font-size: 20px;
+}
